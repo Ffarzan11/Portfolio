@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+$black: #000000;
+$purple: #dddfff;
+$pink: #fbc6f6;
+$turq: #b9fbf3;
+$peach: #ffc0c0;
+$lighter-purple: #d2d9ff;
+$green: #d6f9d3;
+$pink-turquise-gradient: $pink, $turq;
+$peach-purple-gradient: $peach, $lighter-purple;
+$pink-green-gradient: $pink, $green;
+
+@mixin gradient($direction, $colors) {
+  background: -webkit-linear-gradient($direction, $colors);
+  background: -moz-linear-gradient($direction, $colors);
+  background: -o-linear-gradient($direction, $colors);
+  background: linear-gradient($direction, $colors);
+  background-repeat: no-repeat;
+}
+/* media queries */
+/* small phones */
+@media (max-width: 550px) {
+  .navLink {
+    font-size: 10px !important;
+    padding-right: 8px !important;
+  }
+
+  .projectHeader, .aboutMeHeader {
+    font-size: 36px !important;
+  }
+}
+
+/*Tablets*/
+@media (min-width: 551px) and (max-width: 849px) {
+  .navLink {
+    font-size: 10px !important;
+  }
+
+  .projectHeader, .aboutMeHeader {
+    font-size: 36px !important;
+  }
+}
+/* for tablets like surface pro*/
+@media (min-width: 850px) and (max-width: 960px) {
+  .projectHeader, .aboutMeHeader {
+    font-family: "Lato" !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100 !important;
+    font-size: 64px !important;
+    margin-top: 2em;
+  }
+}
+
+/*for chrome minimize transition*/
+@media (min-width: 961px) and (max-width: 1350px) {
+  .projectHeader, .aboutMeHeader {
+    font-family: "Lato" !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100 !important;
+    font-size: 64px !important;
+    margin-top: 2em;
+  }
+}
+
+/*large screens*/
+@media (min-width: 1900px) and (max-width: 2000px) {
+  .projectHeader, .aboutMeHeader {
+    font-family: "Lato" !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100 !important;
+    font-size: 6rem !important;
+    margin-top: 2em;
+  }
+}
+* {
+  margin: 3px;
+  
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: column;
+}
+.navLink {
+  color: $black !important;
+  text-decoration: none;
+  padding-right: 40px;
+  font-family: "Inter" !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.projectHeader, .aboutMeHeader {
+  font-family: "Lato" !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100 !important;
+  font-size: 96px;
+  margin-top: 2em;
+}
+.aboutMeHeader {
+  font-family: "Lato" !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100 !important;
+  font-size: 96px;
+}

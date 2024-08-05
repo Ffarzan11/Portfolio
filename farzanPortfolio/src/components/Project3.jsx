@@ -1,49 +1,48 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import todo from "../assets/todo.png";
-import "../scss/main.scss";
-import { easeIn, motion } from "framer-motion";
-function project3() {
+import styles from "../scss/project.module.scss";
+import { easeInOut, motion } from "framer-motion";
+
+function Project3() {
   return (
-    <>
-      <div className="container-flex projectContainer">
-        <div className="projNameContainer">
-          <p className="projectName p2name">
-            Reminder <br />
-            App
-          </p>
-          <p className="desc p2desc">
-            {" "}
-            Reminder app for android made
-            <br /> with java using android studio
-          </p>
-          <button className="learnMoreBtn">
-            <a
-              href="https://github.com/Ffarzan11/android/tree/main/Reminder%20App"
-              className="projLink"
-              target="_blank"
-            >
-              {" "}
-              Learn More
-            </a>
-          </button>
-        </div>
-        <motion.div
-          className="projImageContainer"
-          initial={{ x: 0 }}
-          animate={{ x: -180 }}
-          transition={{
-            duration: 1.5,
-            delay: 0.5,
-            type: easeIn,
-          }}
-        >
-          <div className="project3-backgroundBox"></div>
-          <div className="image">
-            <img src={todo} alt="project image" className="todoImage" />
-          </div>
-        </motion.div>
+    <div className={`container-flex ${styles.projectContainer}`}>
+      <div className={styles.projNameContainer}>
+        <p className={`${styles.projectName} ${styles.p3name}`}>
+          Reminder <br />
+          App
+        </p>
+        <p className={`${styles.desc} ${styles.p3desc}`}>
+          Reminder app for android made
+          <br /> with java using android studio
+        </p>
+        <button className={styles.learnMoreBtn}>
+          <a
+            href="https://github.com/Ffarzan11/android/tree/main/Reminder%20App"
+            className={styles.projLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn More
+          </a>
+        </button>
       </div>
-    </>
+      <motion.div
+        className={styles.projImageContainer}
+        initial={{ x: 0 }}
+        whileInView={{ x: -180 }}
+        transition={{
+          duration: 1.5,
+          delay: 0.5,
+          ease: easeInOut,
+        }}
+      >
+        <div className={styles.project3BackgroundBox}></div>
+        <div className={styles.image}>
+          <img src={todo} alt="project image" className={styles.todoImage} />
+        </div>
+      </motion.div>
+    </div>
   );
 }
 
-export default project3;
+export default Project3;

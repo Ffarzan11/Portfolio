@@ -1,45 +1,51 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import recipe from "../assets/recipe.png";
-import "../scss/main.scss";
-import { easeIn, motion } from "framer-motion";
-function project1() {
+import styles from "../scss/project.module.scss";
+import { easeInOut, motion } from "framer-motion";
+
+function Project1() {
   return (
     <>
-      <div className="container-flex projectContainer">
-        <div className="projNameContainer">
-          <p className="projectName">
+      <div className={`container-flex ${styles.projectContainer}`}>
+        <div className={styles.projNameContainer}>
+          <p className={styles.projectName}>
             Recipe <br />
             Website
           </p>
-          <p className="desc">
-            {" "}
+          <p className={styles.desc}>
             A full stack website including
             <br /> chatbot made with express JS,
-            <br /> html, css and, MongoDB
+            <br /> HTML, CSS, and MongoDB
           </p>
-          <button className="learnMoreBtn">
+          <button className={styles.learnMoreBtn}>
             <a
               href="https://github.com/Ffarzan11/Recipe-Website"
-              className="projLink"
+              className={styles.projLink}
               target="_blank"
+              rel="noopener noreferrer"
             >
-              {" "}
               Learn More
             </a>
           </button>
         </div>
         <motion.div
-          className="projImageContainer"
+          className={styles.projImageContainer}
           initial={{ x: 0 }}
-          animate={{ x: -180 }}
+          whileInView={{ x: -180 }}
           transition={{
             duration: 1.5,
             delay: 0.5,
-            type: easeIn,
+            ease: easeInOut,
           }}
+          
         >
-          <div className="backgroundBox"></div>
-          <div className="image">
-            <img src={recipe} alt="project image" className="recipeImage" />
+          <div className={styles.backgroundBox}></div>
+          <div className={styles.image}>
+            <img
+              src={recipe}
+              alt="project image"
+              className={styles.recipeImage}
+            />
           </div>
         </motion.div>
       </div>
@@ -47,4 +53,4 @@ function project1() {
   );
 }
 
-export default project1;
+export default Project1;

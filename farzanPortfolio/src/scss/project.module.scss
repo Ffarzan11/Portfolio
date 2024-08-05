@@ -26,26 +26,6 @@ $pink-green-gradient: $pink, $green;
 /* media queries */
 /* small phones */
 @media (max-width: 550px) {
-  .navLink {
-    font-size: 10px !important;
-  }
-
-  .self-portrait {
-    width: 80px !important;
-    height: 80px !important;
-  }
-
-  .name {
-    font-size: 24px !important;
-  }
-
-  .subText {
-    font-size: 14px !important;
-  }
-
-  .projectHeader {
-    font-size: 36px !important;
-  }
 
   .projectName {
     font-size: 36px !important;
@@ -69,12 +49,20 @@ $pink-green-gradient: $pink, $green;
   .recipeImage {
     width: 200px !important;
     height: 100px !important;
-    margin-left: 70%!important;
+    margin-left: 70% !important;
   }
-  .project3-backgroundBox {
-  display: none !important;
+  .project3BackgroundBox {
+    display: none !important;
   }
   .todoImage {
+    width: 200px !important;
+    height: 100px !important;
+    margin-left: 70% !important;
+  }
+  .project2BackgroundBox {
+    display: none !important;
+  }
+  .movieImage {
     width: 200px !important;
     height: 100px !important;
     margin-left: 70% !important;
@@ -100,27 +88,9 @@ $pink-green-gradient: $pink, $green;
   }
 }
 
-@media (min-width: 551px) and (max-width: 800px) {
-  .navLink {
-    font-size: 10px !important;
-  }
+/*Tablets*/
+@media (min-width: 551px) and (max-width: 849px) {
 
-  .self-portrait {
-    width: 80px !important;
-    height: 80px !important;
-  }
-
-  .name {
-    font-size: 24px !important;
-  }
-
-  .subText {
-    font-size: 14px !important;
-  }
-
-  .projectHeader {
-    font-size: 36px !important;
-  }
 
   .projectName {
     font-size: 36px !important;
@@ -144,12 +114,20 @@ $pink-green-gradient: $pink, $green;
   .recipeImage {
     width: 200px !important;
     height: 100px !important;
-    margin-left: 60%!important;
+    margin-left: 60% !important;
   }
-  .project3-backgroundBox {
-  display: none !important;
+  .project3BackgroundBox {
+    display: none !important;
   }
   .todoImage {
+    width: 200px !important;
+    height: 100px !important;
+    margin-left: 60% !important;
+  }
+  .project2BackgroundBox {
+    display: none !important;
+  }
+  .movieImage {
     width: 200px !important;
     height: 100px !important;
     margin-left: 60% !important;
@@ -167,15 +145,15 @@ $pink-green-gradient: $pink, $green;
   .learnMoreBtn {
     position: relative !important;
     top: 0% !important;
-    left: 40% !important;
+    left: 43% !important;
     z-index: 1;
     border-radius: 5px;
     padding: 5px !important;
     margin-bottom: 5px !important;
   }
 }
-
-@media (min-width: 801px) and (max-width: 900px) {
+/* for tablets like surface pro*/
+@media (min-width: 850px) and (max-width: 960px) {
   .projectContainer {
     display: flex;
     flex-direction: row;
@@ -183,27 +161,16 @@ $pink-green-gradient: $pink, $green;
     margin-bottom: 8em !important;
     position: relative;
   }
-  .projectHeader {
-    font-family: "Lato" !important;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100 !important;
-    font-size: 64px !important;
-    margin-top: 2em;
-  }
+ 
   .projectName {
     font-family: "Red Hat Display" !important;
     font-weight: 300 !important;
     font-size: 36px !important;
     line-height: 1;
     position: absolute;
-    left: 18%;
-
+    left: 12% !important;
     z-index: 1;
   }
-
-  .p2name {
-    left: 10% !important;
-  } 
   .projImageContainer {
     // margin-right: 5em !important;
     position: relative;
@@ -220,37 +187,45 @@ $pink-green-gradient: $pink, $green;
     top: 0;
     margin-left: 3em !important;
   }
-.project3-backgroundBox {
-  width: 400px !important;
-  height: 200px !important;
-}
-.todoImage{
-  position: absolute;
-  width: 400px !important;
-  height: 200px !important;
-  z-index: 1;
-  top: 0;
-  margin-left: 3em !important;
-}
+  .project3BackgroundBox {
+    width: 400px !important;
+    height: 200px !important;
+  }
+  .todoImage {
+    position: absolute;
+    width: 400px !important;
+    height: 200px !important;
+    z-index: 1;
+    top: 0;
+    margin-left: 3em !important;
+  }
+  .project2BackgroundBox {
+    width: 400px !important;
+    height: 200px !important;
+  }
+  .movieImage {
+    position: absolute;
+    width: 400px !important;
+    height: 200px !important;
+    z-index: 1;
+    top: 0;
+    margin-left: 3em !important;
+  }
   .desc {
+    margin-top: 5px;
     font-family: "open sans" !important;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px !important;
+    font-size: 12px !important;
     font-weight: 300;
     position: absolute;
-    left: 10%;
-    z-index: 1;
+    left: 8% !important;
+    z-index: 1 !important;
     top: 45% !important;
-  }
-
-  .p2desc {
-     font-size: 12px !important;
   }
 
   .learnMoreBtn {
     position: absolute;
-
-    left: 15% !important;
+    left: 10% !important;
     border: none;
     border-radius: 5px;
     padding: 8px !important;
@@ -263,9 +238,8 @@ $pink-green-gradient: $pink, $green;
   }
 }
 
-
-
-@media (min-width: 920px) and (max-width: 1024px) {
+/*for chrome minimize transition*/
+@media (min-width: 961px) and (max-width: 1350px) {
   .projectContainer {
     display: flex;
     flex-direction: row;
@@ -273,13 +247,7 @@ $pink-green-gradient: $pink, $green;
     margin-bottom: 8em !important;
     position: relative;
   }
-  .projectHeader {
-    font-family: "Lato" !important;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100 !important;
-    font-size: 64px !important;
-    margin-top: 2em;
-  }
+ 
   .projectName {
     font-family: "Red Hat Display" !important;
     font-weight: 300 !important;
@@ -300,6 +268,30 @@ $pink-green-gradient: $pink, $green;
     height: 200px !important;
   }
   .recipeImage {
+    position: absolute;
+    width: 400px !important;
+    height: 200px !important;
+    z-index: 1;
+    top: 0;
+    margin-left: 3em !important;
+  }
+  .project2BackgroundBox {
+    width: 400px !important;
+    height: 200px !important;
+  }
+  .movieImage {
+    position: absolute;
+    width: 400px !important;
+    height: 200px !important;
+    z-index: 1;
+    top: 0;
+    margin-left: 3em !important;
+  }
+  .project3BackgroundBox {
+    width: 400px !important;
+    height: 200px !important;
+  }
+  .todoImage {
     position: absolute;
     width: 400px !important;
     height: 200px !important;
@@ -331,6 +323,8 @@ $pink-green-gradient: $pink, $green;
     font-weight: 300;
   }
 }
+
+/*large screens*/
 @media (min-width: 1900px) and (max-width: 2000px) {
   .projectContainer {
     display: flex;
@@ -339,13 +333,7 @@ $pink-green-gradient: $pink, $green;
     margin-bottom: 8em !important;
     position: relative;
   }
-  .projectHeader {
-    font-family: "Lato" !important;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100 !important;
-    font-size: 6rem !important;
-    margin-top: 2em;
-  }
+
   .projectName {
     font-family: "Red Hat Display" !important;
     font-weight: 300 !important;
@@ -357,6 +345,9 @@ $pink-green-gradient: $pink, $green;
     z-index: 1;
   }
 
+  .p3name {
+    left: 22% !important;
+  }
   .projImageContainer {
     margin-right: 10em !important;
     position: relative;
@@ -366,6 +357,30 @@ $pink-green-gradient: $pink, $green;
     height: 400px !important;
   }
   .recipeImage {
+    position: absolute;
+    width: 800px !important;
+    height: 400px !important;
+    z-index: 1;
+    top: 0;
+    margin-left: 3em !important;
+  }
+  .project2BackgroundBox {
+    width: 800px !important;
+    height: 400px !important;
+  }
+  .movieImage {
+    position: absolute;
+    width: 800px !important;
+    height: 400px !important;
+    z-index: 1;
+    top: 0;
+    margin-left: 3em !important;
+  }
+  .project3BackgroundBox {
+    width: 800px !important;
+    height: 400px !important;
+  }
+  .todoImage {
     position: absolute;
     width: 800px !important;
     height: 400px !important;
@@ -398,77 +413,6 @@ $pink-green-gradient: $pink, $green;
     font-weight: 300;
     margin-top: 10px;
   }
-}
-* {
-  margin: 3px;
-}
-
-.main-body {
-  display: flex;
-  flex-direction: column;
-}
-.navLink {
-  color: $black !important;
-  text-decoration: none;
-  padding-right: 40px;
-  font-family: "Inter" !important;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-}
-.navLink:hover {
-  text-decoration: underline;
-}
-
-.img {
-  display: flex;
-  justify-content: center !important;
-}
-
-@keyframes move {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.self-portrait {
-  border-radius: 10rem;
-  width: 250px;
-  height: 250px;
-  z-index: 1;
-  animation: move 3s ease-in-out infinite;
-}
-
-.introText {
-  text-align: center;
-}
-
-.home-img-text-holder {
-  padding-top: 8%;
-}
-
-.name {
-  font-family: "Dancing Script" !important;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 64px;
-}
-
-.subText {
-  font-family: "Kalam" !important;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 24px;
-}
-
-.projectHeader {
-  font-family: "Lato" !important;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100 !important;
-  font-size: 96px;
-  margin-top: 2em;
 }
 
 .projectName {
@@ -507,7 +451,7 @@ $pink-green-gradient: $pink, $green;
   top: 0;
   margin-left: 6em;
 }
-.project3-backgroundBox {
+.project3BackgroundBox {
   width: 800px;
   height: 400px;
   margin-top: 3em;
@@ -522,6 +466,21 @@ $pink-green-gradient: $pink, $green;
   margin-left: 6em;
 }
 
+.project2BackgroundBox {
+  width: 800px;
+  height: 400px;
+  margin-top: 3em;
+  @include gradient(top, $peach-purple-gradient);
+}
+
+.movieImage {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  z-index: 1;
+  top: 0;
+  margin-left: 6em;
+}
 .desc {
   font-family: "open sans" !important;
   font-family: Arial, Helvetica, sans-serif;
@@ -544,13 +503,16 @@ $pink-green-gradient: $pink, $green;
   font-family: "open sans" !important;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
+  z-index: 1 !important;
 }
 
 .projLink {
   text-decoration: none;
+  color: #000000 !important;
 }
 
 .projLink:visited {
   text-decoration: none !important;
   color: #000000 !important;
 }
+
