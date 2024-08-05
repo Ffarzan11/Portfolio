@@ -7,7 +7,7 @@ function AboutMe() {
         <p className={style.aboutMeDesc}>
           {" "}
           Hello! I am Farhikhta Farzan. I am currently pursuing my Bachelor’s
-          degree on computer science. I am interested in software development.
+          degree in computer science. I am interested in software development.
           My experiences include software development and product management. I
           have experience working with C++, Java, Express.js, React, MongoDB,
           MySQL, and Python. If you want to learn more about me, feel free to dm
